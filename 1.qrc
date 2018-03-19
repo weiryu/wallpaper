@@ -1,0 +1,10 @@
+<RCC>
+  <qresource>
+    <file>background.jpg</file>
+    <file>clean.ico</file>
+    <file>close.ico</file>
+    <file>file.ico</file>
+    <file>folder.ico</file>
+    <file>title.ico</file>
+  </qresource>
+</RCC>
