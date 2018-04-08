@@ -396,7 +396,7 @@ class Window(QMainWindow, Ui_MainWindow):
         local = self.dictionary_get()
         local_nationalgeographic = local + "\\" + "nationalgeographic"
         p = r'/photography/.*?\.html'
-        url = 'http://www.nationalgeographic.com.cn/photography/photo_of_the_day/'
+        url = 'http://www.ngchina.com.cn/photography/photo_of_the_day/'
         html = self.open_url(url)
         # 网络连接异常处理
         if html == None:
@@ -404,7 +404,7 @@ class Window(QMainWindow, Ui_MainWindow):
             urllist = []
         else:
             urllist = re.findall(p, html)
-            print(urllist)
+            # print(urllist)
         if urllist!= []:
             print("1")
             for url in urllist:
@@ -412,10 +412,11 @@ class Window(QMainWindow, Ui_MainWindow):
                 if not urllist.count(url) < 3:
                     print(url)
                     new_urllist.append(url)
+            print("---")
             print(new_urllist)
             new_url = r"http://www.nationalgeographic.com.cn" + new_urllist[0]
             new_html = self.open_url(new_url)
-            q = r"http://image.nationalgeographic.com.cn/.\d+/.\d+/.\d+.jpe*g"
+            q = r"http://image.ngchina.com.cn/.\d+/.\d+/.\d+.jpe*g"
             if new_html == None:
                 QMessageBox.about(self, "壁纸大师", '网络错误，请检查网络连接后重试')
                 imglist = []
