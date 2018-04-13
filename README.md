@@ -1,7 +1,7 @@
 ## python桌面壁纸程序
 
 ## 下载地址
-* 链接: https://pan.baidu.com/s/1h1tuh5bV15b9P6PjlgIEhQ 密码: gauh
+* 链接: https://pan.baidu.com/s/1RKkd9heYw1zeG0jFv7O3Vw 密码: nmyg
 
 --------------------------------------------------------------------------------------
 ## 功能简介
